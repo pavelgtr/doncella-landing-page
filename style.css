@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+  margin: 0; /* Removes default margins from all elements */
+  padding: 0; /* Removes default padding from all elements */
+}
+
+html,
+body {
+  width: 100%; /* Ensures the html and body tags take up the full width of the viewport */
+  height: 100%; /* Ensures the html and body tags take up the full height of the viewport */
+}
+
+#logo-contact,
+.hero,
+.header-description {
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  /* display: flex; */
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto; /* Adjust the value based on design needs */
+  background-color: rgba(148, 214, 232, 0.5);
+}
+
+#logo-contact {
+  /* border: 1px black solid; */
+  /* width: 1023.62px; */
+
+  height: 50.32px;
+  margin-top: 33px;
+
+  display: flex;
+  justify-content: space-between;
+
+  /* background: #5FCFD5; */
+}
+
+.contact-container {
+  background-color: #94d6e8;
+  /* border: 2px solid red; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 20px;
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally, if needed */
+  padding: 25px;
+}
+
+/* .hero {
+  margin-top: 3em;
+  color: rgb(0, 173, 187);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 4.5em;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  line-height: 1.2; /* A unitless value is often better for line-height */
+
+.hero {
+    margin-top: 3em;
+    color: rgb(0, 173, 187);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4.5em;
+    font-weight: 300; /* Keep only one font-weight */
+    letter-spacing: -0.6px;
+    line-height: 1.2;
+}
+
+.header-description {
+  margin-top: 2em;
+  padding-left: 2px;
+}
+
+.header-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+#email::placeholder {
+  color: #888; /* Replace with your desired gray color */
+  padding-left: 20px;
+}
+
+#input_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 1px solid black;
+  width: 27%;
+}
+#input {
+  height: 2em;
+  margin: 0;
+  padding-left: 30px;
+  width: 100%;
+  font-size: 16px;
+}
+#input_img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px; /* Adjust the right property to position it to the far right */
+  width: 10px;
+  height: 10px;
+}

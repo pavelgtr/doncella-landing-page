@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="855px" viewBox="0 0 1440 855" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>wave</title>
+    <defs>
+        <linearGradient x1="96.748656%" y1="11.3962819%" x2="96.748656%" y2="11.3962819%" id="linearGradient-1">
+            <stop stop-color="#94D6E8" offset="0%"></stop>
+            <stop stop-color="#4CBAD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing-Punta-Cana" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Wave" fill="url(#linearGradient-1)" transform="translate(-172, -1084)">
+            <path d="M0,0 L1591.51897,0 C1917.39526,297.18512 2000.80239,626.412043 1841.74039,987.680768 C1810.80732,1057.93733 1777.69749,1111.25719 1742.97594,1152.05096 C1509.88313,1425.9078 1204.15476,1135.2497 996.741642,1614.47661 C837.868702,1981.5517 505.621488,2037.22215 0,1781.48794 L0,0 Z" id="wave" transform="translate(960, 969.5) scale(-1, 1) translate(-960, -969.5)"></path>
+        </g>
+    </g>
+</svg>
