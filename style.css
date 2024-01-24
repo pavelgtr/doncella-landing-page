@@ -10,6 +10,16 @@ body {
   height: 100%; /* Ensures the html and body tags take up the full height of the viewport */
 }
 
+:root {
+  --main-color: rgb(0, 173, 187);
+}
+
+body {
+  background-image: url(./assets/header-background-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #logo-contact,
 .hero,
 .header-description {
@@ -19,11 +29,11 @@ body {
 }
 
 header {
-  /* display: flex; */
   /* border: 1px solid red; */
-  width: 100%;
-  height: auto; /* Adjust the value based on design needs */
-  background-color: rgba(148, 214, 232, 0.5);
+
+  width: 105%;
+  /* height: 70vh; */
+  /* background-color: rgba(148, 214, 232, 0.5); */
 }
 
 #logo-contact {
@@ -54,23 +64,15 @@ header {
   padding: 25px;
 }
 
-/* .hero {
+
+.hero {
   margin-top: 3em;
   color: rgb(0, 173, 187);
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 4.5em;
-  font-weight: 800;
+  font-size: 6em;
+  font-weight: 800; /* Keep only one font-weight */
   letter-spacing: -0.6px;
-  line-height: 1.2; /* A unitless value is often better for line-height */
-
-.hero {
-    margin-top: 3em;
-    color: rgb(0, 173, 187);
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 4.5em;
-    font-weight: 300; /* Keep only one font-weight */
-    letter-spacing: -0.6px;
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .header-description {
@@ -84,29 +86,136 @@ header {
   font-size: 20px;
 }
 
-#email::placeholder {
-  color: #888; /* Replace with your desired gray color */
-  padding-left: 20px;
+
+
+#input-group {
+  display: flex; /* Align input and button horizontally */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 20px; /* Rounded borders */
+  overflow: hidden; /* Clip the children to the border radius */
+  width: 25em;
+  /* justify-content: space-between; */
+}
+#input-group input {
+  border: none; /* No border for input */
+  outline: none; /* Remove focus outline */
+  padding-left: 25px; /* Padding inside input */
+  flex-grow: 1; /* Allow input to grow to fill space */
 }
 
-#input_container {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border: 1px solid black;
-  width: 27%;
+#input-group button {
+  background-color: #FFFFFF; /* Button background color */
+  border: none; /* No border for button */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding inside button */
+  cursor: pointer; /* Mouse pointer changes to hand icon */
+  transition: background-color 0.3s; /* Smooth background color transition */
 }
-#input {
-  height: 2em;
-  margin: 0;
-  padding-left: 30px;
-  width: 100%;
-  font-size: 16px;
+
+#input-group button:hover {
+  background-color: #d3dee2; /*Button background color on hover*/
 }
-#input_img {
-  position: absolute;
-  bottom: 10px;
-  right: 10px; /* Adjust the right property to position it to the far right */
-  width: 10px;
-  height: 10px;
+
+.countdown-banner {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  margin-top: 3%;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif; /* Use your preferred font */
+}
+
+.countdown-item {
+  text-align: center;
+}
+
+.countdown-number {
+  font-size: 3em; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+
+.countdown-label {
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 5px;
+  display: block; /* Makes it go to the next line */
+}
+
+/* Servicios  */
+
+
+
+.services-section {
+  /* border: 2px solid red; */
+  text-align: center;
+  padding: 5em 2em;
+  background-color: #f4f4f4; /* Example background color, adjust as needed */
+}
+
+#Services-location {
+  color: rgb(0, 173, 187);
+  font-weight: 100;
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: -0.5em; /* Reduce space between h3 and h2 */
+}
+
+.section-title {
+  display: flex; /* This will enable Flexbox for the container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align the flex items horizontally */
+  justify-content: space-around;
+}
+
+#Services-subtitle {
+  margin-top: 0em; /* Remove top margin to bring it closer to h3 */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+}
+.services-section h2 {
+  margin-bottom: 2em; /* Space below the section heading */
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4em; /* Space between service boxes */
+}
+
+.service {
+  background-color: #ffffff; /* Background color for service box */
+  border: 1px solid #ccc; /* Border for service box */
+  
+  width: 20%; /* Width for service box, adjust as needed */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+/* .service h3, .service h4 {
+  color: #333; /* Color for headings } */
+
+  .service h3 {
+    color: var(--main-color);
+    font-weight: 100;
+    padding: 1em 3em;
+    white-space: nowrap;
+    overflow: hidden; /* Prevents text from overflowing the container */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text is too long to fit */
+  }
+
+
+.service p {
+  color: #666; /* Color for paragraph text */
+  margin-bottom: 2em; /* Space above the link */
+}
+
+.service-link {
+  color: var(--main-color); /* Color for service link */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Make the link bold */
 }

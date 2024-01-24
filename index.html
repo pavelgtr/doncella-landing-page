@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>Doncella Landing Page</title>
 </head>
+
 <body>
     <header>
         <div id="logo-contact">
@@ -15,13 +19,16 @@
                 <h2>contáctanos</h2>
             </div>
         </div>
-    
+
         <div class="hero">
             <p>YA CASI EN<br>PUNTA CANA</p>
         </div>
-    
+
+        <!-- Launch announcement, descripton and email unput  -->
+
         <div class="header-description">
-            <p class="header-text">¡Doncella ya casi llega a revolucionar la limpieza en Punta<br>Cana! 🌴¿Estás listo para despedirte del
+            <p class="header-text">¡Doncella ya casi llega a revolucionar la limpieza en Punta<br>Cana! 🌴¿Estás listo
+                para despedirte del
                 desorden y
                 darle la<br>bienvenida a una casa y negocio radiante? </p>
             <br>
@@ -29,18 +36,66 @@
             <br>
             <!-- <div class="input-container"><input class="input-box" type="email" id="email" pattern=".+@example\.com" size="30" required placeholder="Email" />
             <img src="./assets/arrow.png" alt="arrow button"></div> -->
-    
-            <div id="input_container">
-                <input type="text" id="input" value required placeholder="Email">
-                <img src="./assets/arrow.png" id="input_img">
+
+            <div id="input-group">
+                <input type="email" id="email" required placeholder="E-mail">
+                <button type="submit">
+                    <img src="./assets/arrow.png" alt="Submit" />
+                </button>
             </div>
         </div>
 
-        <!-- <img src="./assets/MaskPNG.png" alt="test"> -->
-    
-        <!-- <img src="./assets/header-background-image.png" alt="Doncella cleaning"> -->
-        
+        <!-- Countdown to launch -->
+
+        <div class="countdown-banner">
+            <div class="countdown-item">
+                <span class="countdown-number">92</span>
+                <span class="countdown-label">DIAS</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number">05</span>
+                <span class="countdown-label">HORAS</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number">54</span>
+                <span class="countdown-label">MINUTOS</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number">44</span>
+                <span class="countdown-label">SEGUNDOS</span>
+            </div>
+        </div>
     </header>
+
+    <section class="services-section">
+        <div class="section-title">
+            <h3 id="Services-location">PUNTA CANA + BÁVARO</h3>
+            <h2 id="Services-subtitle">Servicios</h2>
+        </div>
+        <div class="services-container">
+          <div class="service">
+            <h3>PARA TU CASA</h3>
+            <h4>Auxiliar</h4>
+            <p>¿No sabes si limpiar la casa o <br> ponerla a la venta? Solicita <br> una Limpieza Profunda,<br>nuestro servicio más completo<br>para limpieza del hogar.</p>
+            <a href="#" class="service-link">Leer más</a>
+          </div>
+          <div class="service">
+            <h3>PARA TU NEGOCIO</h3>
+            <h4>Conserjería</h4>
+            <p>¡Concéntrate en tu negocio! <br> Solicita nuestro servicio de  <br>limpieza y conserjería para tu<br>negocio y atención al personal<br>en la oficina.</p>
+            <a href="#" class="service-link">Leer más</a>
+          </div>
+          <div class="service">
+            <h3>PARA TU CASA O NEGOCIO</h3>
+            <h4>Limpieza 360</h4>
+            <p>Nuestro servicio de lavado<br>mecanizado de muebles,<br>incluye un sistema de inyección<br>y succión para la extracción de<br>suciedades y la eliminación de manchas.</p>
+            <a href="#" class="service-link">Leer más</a>
+          </div>
+        </div>
+      </section>
+      
+
+
 </body>
 
 </html>
