@@ -1,1 +1,197 @@
 
+Doncella website code html form 
+
+
+      <div id="contact" class="contact-form contact_form center content">
+        <div class="contact-header">CONTÁCTANOS</div>
+        <div class="sub-header"> ¿Cómo podemos hacer tu día más fácil? </div>
+            <form class="center" action="/contacto" method="POST" id="formContact">
+            <div class="input name left">
+                <label for="contact_form_name">Nombre:<span>*</span></label>
+                <input id="contact_form_name" name="name" type="text" required="">
+            </div>
+            <div class="input name right">
+                <label for="contact_form_lastname">Apellido:<span>*</span></label>
+                <input id="contact_form_lastname" name="lastname" type="text" required="">
+            </div>
+            <div class="clear"></div>
+            <div class="input email left">
+                <label for="contact_form_email">E-mail:<span>*</span></label>
+                <input id="contact_form_email" name="email" type="text" required="">
+            </div>
+            <div class="input phone right">
+                <label for="contact_form_phone">Teléfono:<span>*</span></label>
+                <input id="contact_form_phone" name="phone" type="text" required="">
+            </div>
+            <div class="clear"></div>
+            <div class="textarea message">
+                <label for="contact_form_message">Mensaje:<span>*</span></label>
+                <textarea id="contact_form_message" name="message" required=""></textarea>
+            </div>
+            <div class="interest">
+                <label for="contact_form_message">Interés:<span>*</span></label>
+                <div class="input radio"><div class="radio-option radio-button"><input type="hidden" name="data[interest]" id="interest_" value=""><input type="radio" name="data[interest]" id="interestRESIDENTIAL" value="RESIDENTIAL"><label for="interestRESIDENTIAL">Servicio Residencial</label></div><div class="radio-option  radio-button"><input type="radio" name="data[interest]" id="interestBUSINESS" value="BUSINESS"><label for="interestBUSINESS">Servicio Negocios</label></div><div class="radio-option  radio-button"><input type="radio" name="data[interest]" id="interestEMPLOYMENT" value="EMPLOYMENT"><label for="interestEMPLOYMENT">Empleo</label></div><div class="radio-option  radio-button"><input type="radio" name="data[interest]" id="interestOTHER" value="OTHER"><label for="interestOTHER">Otro</label></div></div>        </div>
+            <p class="recaptcha-message">
+                Protegido por recaptcha.  <a target="_blank" href="https://policies.google.com/privacy?hl=es">Privacidad</a> y <a target="_blank" href="https://policies.google.com/terms?hl=es">términos</a>.
+            </p>
+    
+            <div class="contact-sender">
+                <div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-b54rgpowp7ol" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Le4KzgdAAAAABTc-MmyXvEl70ELClaVCuE1SGTv&amp;co=aHR0cHM6Ly9kb25jZWxsYS5jb20uZG86NDQz&amp;hl=es&amp;v=Ya-Cd6PbRI5ktAHEhm9JuKEu&amp;size=invisible&amp;sa=submit&amp;cb=c844hubdb9jd"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div><input class="blue-button g-recaptcha" data-sitekey="6Le4KzgdAAAAABTc-MmyXvEl70ELClaVCuE1SGTv" data-callback="onSubmitContact" data-action="submit" type="submit" value="ENVIAR">
+            </div>
+    
+        </form>
+    </div>
+    <style type="text/css">
+        .recaptcha-message{
+            color: #788A95;
+            font-family: "Avenir Next";
+            font-size: 16px;
+            text-align: center;"
+        }
+        .recaptcha-message a{
+            text-decoration: underline;
+        }
+        .recaptcha-message a:hover{
+            color:#5FCFD5;
+        }
+    </style>
+
+
+
+    Doncella website CSS form 
+
+    /* copying from Doncella website  */
+
+ .content {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact-form {
+  font-family: "OpenSans";
+}
+
+.contact-header {
+  color: #85D6DD;
+  font-family: SourceSansPro-Semibold;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+user agent stylesheet
+div {
+  display: block;
+}
+.contact-form {
+  font-family: "OpenSans";
+}
+injected stylesheet
+:host, :root {
+  --rem: 16;
+}
+
+.contact-form .sub-header {
+  display: block;
+  margin: 0 auto;
+  width: 340px;
+}
+
+.sub-header {
+  color: #484848;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  font-family: SourceSansPro-Bold;
+}
+
+.contact-form form {
+  text-align: center;
+  max-width: 724px;
+}
+
+.contact-form form {
+  margin-top: 100px;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+user agent stylesheet
+form {
+  display: block;
+  margin-top: 0em;
+}
+.contact-form {
+  font-family: "OpenSans";
+}
+
+.contact-form div.input {
+  margin-bottom: 30px;
+  width: 340px;
+}
+.contact-form div.input, .contact-form div.textarea {
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+}
+.left {
+  float: left;
+}
+.contact-form div label {
+  color: #788A95;
+  font-family: "Avenir Next";
+}
+
+.contact-form div.input, .contact-form div.textarea {
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.contact-form form div.input input {
+  width: 317px;
+  margin-top: 10px;
+}
+.contact-form form div.input input, .contact-form form div.textarea textarea, .contact-form form div.input select {
+  border: 1px solid #E0E7EB;
+  color: #24BDC5;
+  font-family: "OpenSans";
+  font-size: 18px;
+  height: 50px;
+  margin: 0;
+  line-height: 26px;
+  outline: none;
+  padding-left: 20px;
+  resize: none;
+  vertical-align: top;
+}
+input {
+  outline: none;
+}
+input {
+  border: #DDE3E8 1px solid;
+  border-radius: 4px;
+}
+
+.contact-form div.input, .contact-form div.textarea {
+  background-color: white;
+  border-radius: 4px;
+  text-align: left;
+}
+.contact-form form {
+  text-align: center;
+  max-width: 724px;
+}
+.contact-form {
+  font-family: "OpenSans";
+}
