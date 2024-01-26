@@ -462,12 +462,3 @@ button {
 }
 
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .footer-list ul {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-  }
-  .footer-list li:not(:first-child) {
-    margin-top: 10px; /* Adds spacing between items when stacked */
-  }
-}
