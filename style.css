@@ -387,34 +387,6 @@ button {
   margin-bottom: 3em;
 }
 
-/* --rem: 16;
-text-transform: none !important;
-height: 37px;
-border-radius: 30px;
-font-weight: 300;
-display: inline-block;
-text-align: center;
-padding: 7px 5px 0px 5px;
-cursor: pointer;
-font-family: "Avenir Next";
-width: 120px;
-font-size: 13px !important;
-color: #404040 !important;
-background-color: #9DE4E6;
-border: #9DE4E6 1px solid;
-line-height: 30px; */
-
-/* Responsive adjustments */
-/* @media (max-width: 768px) {
-  .form-row {
-    flex-direction: column;
-  }
-
-  .input-group {
-    margin-right: 0;
-    margin-bottom: 1em;
-  }
-} */
 
 .services-form {
   display: flex;
@@ -433,48 +405,6 @@ line-height: 30px; */
   color: #ffffff;
   border-radius: 20px;
 }
-  /* background-color:#DDE3E8;
-  border: 1px solid #DDE3E8;
- 
-  font-family: var(--main-font-family);
-  font-size: 14px;
-  color: #ffffff;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 40px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-block; } */
-
-
-/* .service-input:checked + .service-label {
-  opacity: 0.6;
-  background-color: var(--main-color);
-  color: #FFFFFF;
-  font-size: 18px;
-} */
-
-/* Optionally, if you want to change the label appearance when the radio button is focused */
-/* .service-input:focus + .service-label {
-  box-shadow: 0 0 0 2px rgba(76, 186, 216, 0.5);
-} */
-
-/* Style for hovering over the label */
-/* .service-label:hover {
-  background: #DDE3E8;
-} */
-/* .submit-button {
-  background: #5fcfd5;
-  border-radius: 4px;
-  font-family: var(--main-font-family);
-  font-size: 18px;
-  color: #ffffff;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 24px;
-} */
-
 
 /* FOOTER LIST  */
 
