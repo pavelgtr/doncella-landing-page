@@ -4,18 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS stylesheet  -->
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- script file -->
+
+  <script src="./script.js" defer></script>
+
+  <!-- FONTS -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
   <title>Doncella Landing Page</title>
 </head>
 
 <body>
   <!-- HEADER -->
   <header>
-    <div id="logo-contact">
-      <img id="top-img" src="./assets/Logo_Doncella.png" alt="Doncella Logo">
+    <div id="logo-contact-container">
+
+      <img id="logo-img" src="./assets/Logo_Doncella.png" alt="Doncella Logo">
       <div class="contact-container">
         <button>contáctanos</button>
       </div>
@@ -29,19 +41,18 @@
 
     <div class="header-description">
       <p class="header-text">¡Doncella ya casi llega a revolucionar la limpieza en Punta<br>Cana! 🌴¿Estás listo
-        para despedirte del
-        desorden y
-        darle la<br>bienvenida a una casa y negocio radiante? </p>
+        para despedirte del desorden y darle<br>la bienvenida a una casa y negocio radiante? </p>
       <br>
       <p class="header-text">Regístrate para enterarte.</p>
       <br>
       <!-- <div class="input-container"><input class="input-box" type="email" id="email" pattern=".+@example\.com" size="30" required placeholder="Email" />
             <img src="./assets/arrow.png" alt="arrow button"></div> -->
 
-      <div id="input-group">
+      <div id="email-input-container">
         <input type="email" id="email" required placeholder="E-mail">
+        <!-- This button needs to be interactive hover and click TBD -->
         <button type="submit">
-          <img src="./assets/arrow.png" alt="Submit" />
+          <img src="./assets/arrow.png" alt="Submit" id="submitArrow" />
         </button>
       </div>
     </div>
@@ -67,7 +78,11 @@
       </div>
     </div>
   </header>
+
+
   <!-- SERVICES -->
+
+
   <section class="services-section">
     <div class="section-title">
       <h3 id="Services-location">PUNTA CANA + BÁVARO</h3>
@@ -110,54 +125,77 @@
   <!-- CONTACT FORM  -->
   <section class="contact-form-section">
     <h2>CONTÁCTANOS</h2>
-    <h4>Regístrate y te notificamos</h1>
-      <form action="/submit-form" method="post">
-        <div class="form-row">
-          <div class="input-group">
-            <label for="first-name">Nombre:<span class="asterisk">*</span></label>
-            <input type="text" id="first-name" name="first_name" required>
-          </div>
-          <div class="input-group">
-            <label for="last-name">Apellido:<span class="asterisk">*</span></label>
-            <input type="text" id="last-name" name="last_name" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="input-group">
-            <label for="email">E-mail:<span class="asterisk">*</span></label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="input-group">
-            <label for="phone">Teléfono:<span class="asterisk">*</span></label>
-            <input type="tel" id="phone" name="phone" required>
-          </div>
+    <h4>Regístrate y te notificamos</h4>
+    <form action="/submit-form" method="post">
+      <div class="form-row">
+        <div class="input-group">
+          <label for="first-name">Nombre:<span class="asterisk">*</span></label>
+          <input type="text" id="first-name" name="first_name" required>
         </div>
         <div class="input-group">
-          <label for="message">Mensaje:<span class="asterisk">*</span></label>
-          <textarea id="message" name="message" required></textarea>
+          <label for="last-name">Apellido:<span class="asterisk">*</span></label>
+          <input type="text" id="last-name" name="last_name" required>
         </div>
-        <button class="submit-button" type="submit">Enviar</button>
-      </form>
+      </div>
+      <div class="form-row">
+        <div class="input-group">
+          <label for="email">E-mail:<span class="asterisk">*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="phone">Teléfono:<span class="asterisk">*</span></label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="message">Mensaje:<span class="asterisk">*</span></label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button class="submit-button" type="submit">Enviar</button>
+      <!-- </form> -->
 
 
-  <!-- interest -->
+      <!-- interest -->
 
-  
-      <div class="input radio">
-        <form class="services-form">
-          <input type="radio" id="interestRESIDENTIAL" name="interest" value="residential" class="service-input">
-          <label for="interestRESIDENTIAL" class="service-label">Auxiliar Doncella</label>
-        
-          <input type="radio" id="interestBUSINESS" name="interest" value="business" class="service-input">
-          <label for="interestBUSINESS" class="service-label">Limpieza 360</label>
-        
-          <input type="radio" id="interestEMPLOYMENT" name="interest" value="employment" class="service-input">
-          <label for="interestEMPLOYMENT" class="service-label">Conserjería Negocios</label>
-        
-          <input type="radio" id="interestOTHER" name="interest" value="other" class="service-input">
-          <label for="interestOTHER" class="service-label">AirBnB</label>
-        </form>
+      <div class="services-form">
+        <input type="radio" id="interestRESIDENTIAL" name="interest" value="residential" class="service-input">
+        <label for="interestRESIDENTIAL" class="service-label">Auxiliar Doncella</label>
+        <input type="radio" id="interestBUSINESS" name="interest" value="business" class="service-input">
+        <label for="interestBUSINESS" class="service-label">Limpieza 360</label>
+        <input type="radio" id="interestEMPLOYMENT" name="interest" value="employment" class="service-input">
+        <label for="interestEMPLOYMENT" class="service-label">Conserjería Negocios</label>
+        <input type="radio" id="interestOTHER" name="interest" value="other" class="service-input">
+        <label for="interestOTHER" class="service-label">AirBnB</label>
+      </div>
+    </form>
   </section>
+
+  <footer>
+    <div class="footer-banner">
+      <img src="./assets/Logo_Doncella.png" alt="Logo" class="footer-logo">
+      <div class="footer-content">
+        <div class="footer-social-media">
+          <a href="#"><img src="./assets/Phone-logo.png" alt="Phone"></a>
+          <a href="#"><img src="./assets/facebook-logo.png" alt="Facebook"></a>
+          <a href="#"><img src="./assets/twitter-logo.png" alt="Twitter"></a>
+          <a href="#"><img src="./assets/pinterest-logo.png" alt="Pinterest"></a>
+          <a href="#"><img src="./assets/instagram-logo.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-list">
+          <ul>
+            <li>&copy; Doncella SRL 2024</li>
+            <li><a href="#">Santo Domingo</a></li>
+            <li><a href="#">Santiago</a></li>
+            <li><a href="#">Punta Cana</a></li>
+            <li><a href="tel:809-638-6572">809-638-6572</a></li>
+            <li><a href="#">Políticas de Privacidad</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
 
 </body>
 

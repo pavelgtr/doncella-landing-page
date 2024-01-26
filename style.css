@@ -1,3 +1,5 @@
+/* GLOBAL ATTRIBUTES */
+
 * {
   box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
   margin: 0; /* Removes default margins from all elements */
@@ -14,14 +16,12 @@ body {
   --main-color: rgb(0, 173, 187);
   --main-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    --red-border-test: 2px solid red;
+  --red-border-test: 2px solid red;
 }
 
-body {
-  /* top image */
-}
+/* HEADER CSS */
 
-#logo-contact,
+#logo-contact-container,
 .hero,
 .header-description {
   width: 70vw;
@@ -29,15 +29,34 @@ body {
   margin-right: auto;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #logo-contact-container,
+  .hero,
+  .header-description {
+    /* Adjust the width, margins, or any other properties for mobile here */
+    width: 90vw; /* Example: You might want a wider element on mobile for better readability */
+    /* You can also adjust margins or other properties if needed */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 header {
+  box-sizing: border-box;
   margin-top: 0px;
-  background-image: url(./assets/header-background-image.png);
+  background-image: url(./assets/Crop\ image\ project.png);
   background-repeat: no-repeat;
-  background-size: 110% 100%;
+  background-size: 100% auto;
+  /* position: fixed; */
+  width: 100%;
+
+  min-height: 50vh; /* Adjust as needed */
   width: 100%;
 }
 
-#logo-contact {
+#logo-contact-container {
   padding-top: 40px;
   /* border: 2px solid red; */
   display: flex;
@@ -45,8 +64,10 @@ header {
   align-items: center;
 }
 
-#top-img {
+#logo-img {
   padding-bottom: 20px;
+  max-width: 20vw;
+  height: auto;
 }
 
 button {
@@ -65,7 +86,7 @@ button {
   margin-top: 3em;
   color: rgb(0, 173, 187);
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 6em;
+  font-size: 4vw;
   font-weight: 800; /* Keep only one font-weight */
   letter-spacing: -0.6px;
   line-height: 1.2;
@@ -79,25 +100,27 @@ button {
 .header-text {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 1.2vw;
+  text-align: left;
 }
 
-#input-group {
+#email-input-container {
   display: flex; /* Align input and button horizontally */
-  border: 1px solid #ccc; /* Border color */
+  border: 1.5px solid #ccc; /* Border color */
   border-radius: 20px; /* Rounded borders */
   overflow: hidden; /* Clip the children to the border radius */
-  width: 25em;
-  /* justify-content: space-between; */
+  width: 25vw;
+  height: 5vw;
+  justify-content: center;
 }
-#input-group input {
+#email-input-container input {
   border: none; /* No border for input */
   outline: none; /* Remove focus outline */
   padding-left: 25px; /* Padding inside input */
   flex-grow: 1; /* Allow input to grow to fill space */
 }
 
-#input-group button {
+#email-input-container button {
   background-color: #ffffff; /* Button background color */
   border: none; /* No border for button */
   color: white; /* Text color */
@@ -106,15 +129,16 @@ button {
   transition: background-color 0.3s; /* Smooth background color transition */
 }
 
-#input-group button:hover {
-  background-color: #d3dee2; /*Button background color on hover*/
-}
+/* THIS IS TBD, CHANGE BUTTON WHEN HOVER */
+/* #email-input-container button:hover {
+ background-image: url(./assets/arrow-hover.png);
+} */
 
 .countdown-banner {
   display: flex;
   justify-content: center;
-  gap: 10em;
-  margin-top: 2%;
+  gap: 7vw;
+  margin-top: 1.5%;
   align-items: center;
   background-color: var(--main-color);
   color: #ffffff;
@@ -123,36 +147,34 @@ button {
 }
 
 .countdown-item {
+  /*  centers number and date text  */
   text-align: center;
 }
 
 .countdown-number {
-  font-size: 3em; /* Adjust size as needed */
+  font-size: 6vh; /* Adjust size as needed */
   font-weight: bold;
 }
 
 .countdown-label {
-  font-size: 1em;
+  font-size: 2vh;
   text-transform: uppercase;
   margin-top: 5px;
   display: block; /* Makes it go to the next line */
 }
 
-/* Servicios  */
+                                        /* SERVICIOS CSS */
+
+
 
 .services-section {
   /* border: 2px solid red; */
   text-align: center;
-  padding: 5em 2em;
-  background-color: #f4f4f4; /* Example background color, adjust as needed */
+  padding: 10vh 4vh;
 }
 
-#Services-location {
-  color: rgb(0, 173, 187);
-  font-weight: 100;
-  font-size: 1.5em;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: -0.5em; /* Reduce space between h3 and h2 */
+.services-section h2 {
+  margin-bottom: 2em; /* Space below the section heading */
 }
 
 .section-title {
@@ -162,17 +184,21 @@ button {
   justify-content: space-around;
 }
 
+#Services-location {
+  color: rgb(0, 173, 187);
+  font-weight: 300;
+  font-size: 1.5vw;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: -0.5vh; /* Reduce space between h3 and h2 */
+}
+
 #Services-subtitle {
-  margin-top: 0em; /* Remove top margin to bring it closer to h3 */
+  margin-top: 0.5em; /* Remove top margin to bring it closer to h3 */
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 3em;
 }
-.services-section h2 {
-  margin-bottom: 2em; /* Space below the section heading */
-}
 
-/* CONTINUE HERE */
 .services-container {
   display: flex;
   justify-content: space-around;
@@ -181,18 +207,42 @@ button {
   margin-right: auto;
 }
 
-
 .service {
   background-color: #ffffff; /* Background color for service box */
   border: 1px solid #ccc; /* Border for service box */
   width: 17em; /* Width for service box, adjust as needed */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
   height: 20em;
-  font-size: 16px;
+  font-size: 1.75vh;
   text-align: center;
   background-color: #fafafa;
   padding: 1em;
+  box-shadow: #a47d7d;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
+
+.service h4 {
+  margin-top: 0.5em; /* Adjust top margin for h4 to control spacing */
+  margin-bottom: 0.1em;
+}
+
+.service p {
+  flex-grow: 1; /* Allows the paragraph to expand and fill available space, pushing the button down */
+}
+
+.service button {
+  margin-top: 1vh; /* Pushes the button to the bottom */
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; /* Example: Button width as a percentage of the .service container width */
+  padding: 1.3vh 1.3vw; /* Example: Padding based on viewport size for responsive height and width */
+  font-size: 0.8vw; /* Example: Font size scales with viewport width */
+  /* Additional styles for button (e.g., border, background-color) */
+}
+
 .arrows {
   display: flex;
   align-items: center;
@@ -202,8 +252,9 @@ button {
 }
 
 .arrows img {
+  /* NEEDS TO  BE INTERACTIVE */
   opacity: 1.5;
-  border: 4px solid #DDE3E8;
+  border: 4px solid #dde3e8;
   height: 50%;
   border: none;
 }
@@ -214,7 +265,7 @@ button {
   color: var(--main-color);
   font-weight: 100;
   font-size: 1em;
-  padding: 1em 3em;
+  padding: 1em 0em;
   white-space: nowrap;
   overflow: hidden; /* Prevents text from overflowing the container */
   text-overflow: ellipsis; /* Adds an ellipsis if the text is too long to fit */
@@ -222,10 +273,13 @@ button {
 
 .service p {
   color: #666; /* Color for paragraph text */
-  margin-bottom: 2em; /* Space above the link */
+  /* margin-bottom: 2em;  */
 }
 
+.service button {
 
+ 
+}
 
 /* contact form section */
 
@@ -236,6 +290,14 @@ button {
   border: 2px solid red;
 } */
 
+
+
+
+
+/* CONTACT FORM SECTION  */
+
+
+
 .contact-form-section {
   text-align: center;
   max-width: 100%; /* Or your preferred max width */
@@ -244,7 +306,7 @@ button {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 1em;
-  margin-top:5em;
+  margin-top: 5em;
 }
 
 form {
@@ -270,7 +332,6 @@ form {
 /* .input-group > label {
   font-size: 40px;
 } */
-
 
 .form-row {
   display: flex;
@@ -322,11 +383,9 @@ button {
 }
 
 .submit-button {
-
-  margin-top: 3em ;
+  margin-top: 3em;
   margin-bottom: 3em;
 }
-
 
 /* --rem: 16;
 text-transform: none !important;
@@ -361,20 +420,19 @@ line-height: 30px; */
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 3vh;
 }
-
 
 .service-input {
-  display: none; 
+  display: none;
 }
 
-.service-label { 
-
-background-color: #DDE3E8;
-padding: 0.5em 1em;
-color: #ffffff;
-border-radius: 25%;
-
+.service-label {
+  background-color: #dde3e8;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  border-radius: 20px;
+}
   /* background-color:#DDE3E8;
   border: 1px solid #DDE3E8;
  
@@ -387,8 +445,7 @@ border-radius: 25%;
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: inline-block;  */
-} 
+  display: inline-block; } */
 
 
 /* .service-input:checked + .service-label {
@@ -417,3 +474,70 @@ border-radius: 25%;
   text-align: center;
   line-height: 24px;
 } */
+
+
+/* FOOTER LIST  */
+
+.footer-banner {
+  margin-top: 0vh;
+  display: flex;
+  align-items: center;
+  background-color: #00adb5; /* Adjust the color to match your design */
+  padding: 10vh 10vw; /* Adjusted to have padding on both sides */
+  justify-content: space-between; /* Aligns children to the edges */
+}
+
+.footer-logo {
+  height: auto; /* Maintain aspect ratio */
+  width: 10vw; /* Adjust the width to make the logo smaller */
+  margin-right: 20px; /* Creates space between the logo and the list */
+}
+.footer-list {
+  text-align: center;
+  padding: 10px 0; /* Adjust padding to match your design */
+  flex-grow: 1;
+}
+
+.footer-list ul {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-wrap: wrap; /* Allows list items to wrap on smaller screens */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adjust the space between list items */
+  align-items: center;
+}
+
+.footer-list li {
+  display: inline; /* Inline display for list items */
+}
+
+.footer-list a {
+  color: #ffffff; /* Adjust link color to match your design */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 10px; /* Adjust the gap between icons */
+  justify-content: flex-end;
+  margin-right: 5vw;
+  margin-bottom: 1vh;
+}
+
+.footer-social-media a img {
+  width: 2vw; /* Adjust size of social media icons */
+  height: auto;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer-list ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  .footer-list li:not(:first-child) {
+    margin-top: 10px; /* Adds spacing between items when stacked */
+  }
+}

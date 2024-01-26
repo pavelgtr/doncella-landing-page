@@ -1,3 +1,24 @@
+
+// Select the button by its type 'submit' within '#email-input-container'
+var submitButtonImg = document.querySelector('#submitArrow');
+
+submitButtonImg.addEventListener('click', () => {
+    alert('clicked');
+    // submitButtonImg.src = './assets/arrow-hover.png';
+})
+
+
+// Change the image source on mouseover
+// submitButtonImg.addEventListener('mouseover', function() {
+//     this.src = './assets/arrow-hover.png';
+//   });
+  
+  // Change the image source back on mouseout
+//   submitButtonImg.addEventListener('mouseout', function() {
+//     this.src = './assets/arrow.png';
+//   });
+
+
 //Countdown timer to launch date 
 
 // Set the end date
