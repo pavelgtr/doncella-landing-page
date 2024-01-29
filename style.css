@@ -53,7 +53,7 @@ header {
   width: 100%;
 
   min-height: 50vh; /* Adjust as needed */
-  width: 100%;
+ 
 }
 
 #logo-contact-container {
@@ -73,10 +73,10 @@ header {
 button {
   background: var(--main-color);
   font-family: var(--main-font-family);
-  font-size: 14px;
+  font-size: 1em;
   color: #ffffff;
   letter-spacing: 1px;
-  padding: 20px;
+  /* padding: 1%; */
   padding: 1em;
   border: none;
   font-weight: bold;
